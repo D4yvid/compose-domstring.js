@@ -1,3 +1,3 @@
-export * from "./src/index";
-export * from "./src/props";
-export * from "./src/elements";
+export * from "./src/index.js";
+export * from "./src/props.js";
+export * from "./src/elements.js";

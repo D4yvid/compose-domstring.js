@@ -1,21 +1,24 @@
 {
-  "name": "compose-domstring.js",
-  "version": "1.0.0",
-  "description": "An UI library for JS - HTML generation support",
+    "name": "compose-domstring.js",
+    "version": "1.0.0",
+    "description": "An UI library for JS - HTML generation support",
 
-  "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch"
-  },
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch"
+    },
 
-  "module": "index.ts",
+    "type": "module",
 
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
 
-  "dependencies": {
-    "compose.js": "link:/var/home/d4y/Documents/Programming/compose.js",
-    "typescript": "^5.7.2"
-  }
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+
+    "dependencies": {
+        "compose.js": "link:/var/home/d4y/Documents/Programming/compose.js",
+        "typescript": "^5.7.2"
+    }
 }

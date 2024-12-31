@@ -54,7 +54,7 @@ import {
   TrackProps,
   VideoProps,
   setupAttributes,
-} from "./props";
+} from "./props.js";
 
 function setupChildren(element: Element, children: any[]) {
   for (const child of children) {

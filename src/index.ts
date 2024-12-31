@@ -1,6 +1,6 @@
 import { ComposableInstance } from "compose.js";
-import { Element, RawHTMLElement, TextElement } from "./props";
-import { Text } from "./elements";
+import { Element, RawHTMLElement, TextElement } from "./props.js";
+import { Text } from "./elements.js";
 
 /** @throws {Error} */
 export function renderToString<T>(
@@ -17,6 +17,9 @@ export function renderToString<T>(
 
     if (instance.rawChildren) {
       for (let [index, child] of instance.rawChildren.entries()) {
+        if (typeof (child) === 'undefined')
+          continue;
+
         if (typeof(child) === 'string') {
           child = Text(child);
         }
