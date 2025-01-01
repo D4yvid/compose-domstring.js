@@ -389,6 +389,7 @@ export type LinkProps = GenericProps &
     type: string;
     sizes: string;
     crossorigin: boolean;
+    as: string;
   }>;
 
 export type MapProps = GenericProps &
