@@ -58,6 +58,10 @@ export function renderToString<T>(
   function elementToString(element: Element): string {
     let result = ``;
 
+    if (element.tagName == 'html') {
+      result += '<!DOCTYPE html>';
+    }
+
     if (element.tagName == '#text') {
       return escapeHTML((element as TextElement).children[0]);
     }
