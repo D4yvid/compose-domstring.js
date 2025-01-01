@@ -93,6 +93,10 @@ export type GenericProps =
       ariaValueMin: number;
       ariaValueNow: number;
       ariaValueText: string;
+
+      popover: boolean|string;
+      popoverTarget: string;
+      popoverTargetAction: string;
     }>
   | object;
 
@@ -204,6 +208,7 @@ export type ButtonProps = GenericProps &
     name: string;
     type: "button" | "submit" | "reset";
     value: string;
+    popoverTarget: string;
   }>;
 
 export type CanvasProps = GenericProps &
